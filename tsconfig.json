@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["es2017"],
+    "declaration": true,
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "types": ["react-native"],
+    "allowJs": true,
+    "paths":{
+      "react": ["./node_modules/@types/react"],
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "lib", "example", "node_modules/react-native"]
+}
