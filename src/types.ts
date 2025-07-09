@@ -40,6 +40,7 @@ export interface DropdownModalProps {
     dropdownProps?: DropdownDataProps;
     dropdownStyles?: DropdownModalStyles;
   }
+  rtl?: boolean;
 }
 
 export interface DropdownDataProps {

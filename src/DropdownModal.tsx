@@ -19,6 +19,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
   onSelect,
   dropdownModalProps,
   selectedOption,
+  rtl,
 }) => {
   const styles = StyleSheet.create({
     modalContainer: {
@@ -42,7 +43,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
     },
     row: {
       width: "100%",
-      flexDirection: "row",
+      flexDirection: rtl ? "row-reverse" : "row",
       alignItems: "center",
       justifyContent: "space-between",
     },
@@ -64,7 +65,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
       justifyContent: "space-between",
       borderBottomWidth: 1,
       borderBottomColor: "rgba(60, 60, 67, 0.3)",
-      flexDirection: "row",
+      flexDirection: rtl ? "row-reverse" : "row",
       alignItems: "center",
       ...dropdownModalProps?.dropdownStyles?.optionContainerStyle,
     },
@@ -126,7 +127,10 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
                 </Text>
                 {isSelected && (
                   <TickIcon
-                    color={dropdownModalProps?.dropdownStyles?.selectedOptionText?.color || "#007AFF"}
+                    color={
+                      dropdownModalProps?.dropdownStyles?.selectedOptionText
+                        ?.color || "#007AFF"
+                    }
                   />
                 )}
               </Pressable>

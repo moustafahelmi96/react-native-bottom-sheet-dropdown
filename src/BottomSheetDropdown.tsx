@@ -64,7 +64,7 @@ const BottomSheetDropdown: React.FC<DropdownProps> = ({
 
   return (
     <>
-        <DropdownModal visible={showModal} onClose={toggleDropdownModal} data={data} onSelect={onSelect} selectedOption={selectedOption} dropdownModalProps={{
+        <DropdownModal visible={showModal} onClose={toggleDropdownModal} data={data} onSelect={onSelect} selectedOption={selectedOption} rtl={rtl} dropdownModalProps={{
           ...dropdownModalProps
         }} />
       <View style={styles.mainContainer}>
