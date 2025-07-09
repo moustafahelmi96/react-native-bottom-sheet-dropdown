@@ -117,11 +117,18 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
                 }}
               >
                 <Text
-                  style={[styles.optionValueText, isSelected && styles.selectedValueText]}
+                  style={[
+                    styles.optionValueText,
+                    isSelected && styles.selectedValueText,
+                  ]}
                 >
                   {item.label}
                 </Text>
-                {isSelected && <TickIcon />}
+                {isSelected && (
+                  <TickIcon
+                    color={dropdownModalProps?.dropdownStyles?.selectedOptionText?.color || "#007AFF"}
+                  />
+                )}
               </Pressable>
             );
           })}

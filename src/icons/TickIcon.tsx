@@ -1,7 +1,8 @@
 import React from "react";
+import { ColorValue } from "react-native";
 import { Path, Svg } from "react-native-svg";
 
-export function TickIcon({ color = "#215A47" }: { color?: string }) {
+export function TickIcon({ color = "#215A47" }: { color?: ColorValue }) {
   return (
     <Svg
       width="24"

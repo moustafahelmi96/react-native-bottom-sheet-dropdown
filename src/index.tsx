@@ -5,16 +5,19 @@ export { default } from './BottomSheetDropdown';
 // Export types for TypeScript users
 export type { 
   DropdownItem, 
-  DropdownProps 
+  DropdownProps,
+  DropdownModalProps,
+  DropdownDataProps,
+  DropdownModalStyles
 } from './types';
 
-// Optional: Export any additional utilities or constants
+// Default values that match the component implementation
 export const DropdownDefaults = {
   placeholder: 'Select an option',
-  maxHeight: 400,
-  animationDuration: 300,
-  headerTitle: 'Select Option',
-};
-
-// Version info (optional)
-export const VERSION = '1.0.0';
+  title: '',
+  rtl: false,
+  dropdownProps: {
+    dropdownTitle: 'Select Option',
+    closeTitle: 'Close'
+  }
+} as const;
