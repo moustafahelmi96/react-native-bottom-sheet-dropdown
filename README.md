@@ -2,19 +2,21 @@
 
 A customizable dropdown component with bottom sheet UI for React Native applications. This component provides a smooth, native-feeling dropdown experience with modal presentation.
 
-## Demo
-
-### English Version
-<div align="center">
-  <img src="./demo/english-demo.gif" alt="English Demo" width="300" />
-</div>
-
-
-### Arabic Version (RTL Support)
-<div align="center">
-  <img src="./demo/arabic-demo.gif" alt="Arabic Demo" width="300" />
-</div>
-
+Demo
+<table>
+  <tr>
+    <td align="center">
+      <img src="./demo/english-demo.gif" alt="English Demo" width="300" />
+      <br />
+      <b>English Version</b>
+    </td>
+    <td align="center">
+      <img src="./demo/arabic-demo.gif" alt="Arabic Demo" width="300" />
+      <br />
+      <b>Arabic Version (RTL Support)</b>
+    </td>
+  </tr>
+</table>
 ## Features
 
 - ✅ **Bottom Sheet Modal**: Elegant modal presentation from bottom of screen
