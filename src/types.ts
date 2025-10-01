@@ -1,6 +1,7 @@
 import { ViewStyle, TextStyle } from "react-native";
 
 export interface DropdownItem {
+  key: string;
   label: string;
   value: string;
 }

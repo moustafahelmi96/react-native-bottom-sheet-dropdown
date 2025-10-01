@@ -7,6 +7,9 @@ yarn-error.log*
 # Built library files
 lib/
 
+# Tarball files
+*.tgz
+
 # OS generated files
 .DS_Store
 .DS_Store?

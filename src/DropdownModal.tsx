@@ -106,11 +106,11 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
           style={styles.scrollView}
           showsVerticalScrollIndicator={false}
         >
-          {data.map((item) => {
+          {data.map((item, index) => {
             const isSelected = selectedOption?.value === item.value;
             return (
               <Pressable
-                key={item.value}
+                key={item?.key || index}
                 style={styles.optionContainer}
                 onPress={() => {
                   onSelect(item);
