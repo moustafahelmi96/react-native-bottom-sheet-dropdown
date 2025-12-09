@@ -25,6 +25,7 @@ export interface DropdownProps {
   titleStyle?: TextStyle;
   selectedValueStyle?: TextStyle;
   placeholderStyle?: TextStyle;
+  iconColor?: string;
   dropdownModalProps: {
     dropdownProps?: DropdownDataProps;
     dropdownStyles?: DropdownModalStyles;

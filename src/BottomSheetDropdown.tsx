@@ -18,6 +18,7 @@ const BottomSheetDropdown: React.FC<DropdownProps> = ({
   titleStyle,
   dropdownModalProps,
   selectedOption,
+  iconColor,
 }) => {
   const [showModal, setShowModal] = React.useState(false);
 
@@ -78,7 +79,7 @@ const BottomSheetDropdown: React.FC<DropdownProps> = ({
           ) : (
             <Text style={styles.placeholderValue}>{placeholder}</Text>
           )}
-          <DownIcon />
+          <DownIcon color={iconColor} />
         </Pressable>
       </View>
     </>
