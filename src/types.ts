@@ -56,5 +56,6 @@ export interface DropdownModalStyles {
   optionValueText?: TextStyle;
   selectedOptionText?: TextStyle;
   optionContainerStyle?: ViewStyle;
+  modalBackgroundColor?: string;
 }
 

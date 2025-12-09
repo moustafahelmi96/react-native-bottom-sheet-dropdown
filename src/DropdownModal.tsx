@@ -31,7 +31,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
       borderTopRightRadius: wp(2),
       paddingHorizontal: wp(4),
       paddingVertical: hp(2),
-      backgroundColor: "#fff",
+      backgroundColor: dropdownModalProps?.dropdownStyles?.modalBackgroundColor || "#fff",
     },
     dash: {
       width: wp(10),
