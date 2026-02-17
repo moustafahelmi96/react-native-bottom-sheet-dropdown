@@ -69,7 +69,7 @@ const BottomSheetDropdown: React.FC<DropdownProps> = ({
           ...dropdownModalProps
         }} />
       <View style={styles.mainContainer}>
-        <Text style={styles.title}>{title}</Text>
+        {title ? <Text style={styles.title}>{title}</Text> : null}
         <Pressable
           style={styles.dropdownContainer}
           onPress={toggleDropdownModal}
