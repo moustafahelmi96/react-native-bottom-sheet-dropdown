@@ -33,7 +33,7 @@ const BottomSheetDropdown: React.FC<DropdownProps> = ({
       height: hp(5.5),
       backgroundColor: "#ffffff",
       borderRadius: wp(2),
-      marginTop: hp(1),
+      marginTop: title ? hp(1) : 0,
       borderWidth: 1,
       borderColor: "#CFCFCF",
       flexDirection: rtl ? "row-reverse" : "row",
