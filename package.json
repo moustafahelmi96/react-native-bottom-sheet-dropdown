@@ -1,6 +1,6 @@
 {
   "name": "react-native-bottom-sheet-dropdown",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A dropdown component with bottom sheet UI for React Native",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
