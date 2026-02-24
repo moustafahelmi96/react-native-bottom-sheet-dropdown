@@ -48,11 +48,11 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
       justifyContent: "space-between",
     },
     dropdownTitle: {
-      fontSize: 16,
+      fontSize: dropdownModalProps?.dropdownTitleTextSize || 16,
       ...dropdownModalProps?.dropdownStyles?.dropdownTitleStyle,
     },
     close: {
-      fontSize: 16,
+      fontSize: dropdownModalProps?.closeTitleTextSize || 16,
       color: "blue",
       ...dropdownModalProps?.dropdownStyles?.closeTitleStyle,
     },
@@ -70,7 +70,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
       ...dropdownModalProps?.dropdownStyles?.optionContainerStyle,
     },
     optionValueText: {
-      fontSize: 14,
+      fontSize: dropdownModalProps?.optionTextSize || 14,
       textAlign: "left",
       ...dropdownModalProps?.dropdownStyles?.optionValueText,
     },

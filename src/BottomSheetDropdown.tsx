@@ -19,6 +19,7 @@ const BottomSheetDropdown: React.FC<DropdownProps> = ({
   dropdownModalProps,
   selectedOption,
   iconColor,
+  titleTextSize,
 }) => {
   const [showModal, setShowModal] = React.useState(false);
 
@@ -44,7 +45,7 @@ const BottomSheetDropdown: React.FC<DropdownProps> = ({
       ...mainDropdownInput,
     },
     title: {
-      fontSize: 16,
+      fontSize: titleTextSize || 16,
       color: "#0D0D0D",
       textAlign: rtl ? "right" : "left",
       ...titleStyle,
@@ -65,9 +66,17 @@ const BottomSheetDropdown: React.FC<DropdownProps> = ({
 
   return (
     <>
-        <DropdownModal visible={showModal} onClose={toggleDropdownModal} data={data} onSelect={onSelect} selectedOption={selectedOption} rtl={rtl} dropdownModalProps={{
+      <DropdownModal 
+        visible={showModal} 
+        onClose={toggleDropdownModal} 
+        data={data} 
+        onSelect={onSelect} 
+        selectedOption={selectedOption} 
+        rtl={rtl}
+        dropdownModalProps={{
           ...dropdownModalProps
-        }} />
+        }} 
+      />
       <View style={styles.mainContainer}>
         {title ? <Text style={styles.title}>{title}</Text> : null}
         <Pressable

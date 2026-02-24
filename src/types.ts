@@ -26,9 +26,13 @@ export interface DropdownProps {
   selectedValueStyle?: TextStyle;
   placeholderStyle?: TextStyle;
   iconColor?: string;
+  titleTextSize?: number;
   dropdownModalProps: {
     dropdownProps?: DropdownDataProps;
     dropdownStyles?: DropdownModalStyles;
+    optionTextSize?: number;
+    dropdownTitleTextSize?: number;
+    closeTitleTextSize?: number;
   }
 }
 
@@ -41,6 +45,9 @@ export interface DropdownModalProps {
   dropdownModalProps: {
     dropdownProps?: DropdownDataProps;
     dropdownStyles?: DropdownModalStyles;
+    optionTextSize?: number;
+    dropdownTitleTextSize?: number;
+    closeTitleTextSize?: number;
   }
   rtl?: boolean;
 }
